@@ -1,6 +1,4 @@
 """
-File: forestfire.py
-----------------
 This program highlights fires in an image by identifying
 pixels who red intensity is more than INTENSITY_THRESHOLD times
 the average of the red, green, and blue values at a pixel.
@@ -25,7 +23,6 @@ def findFlames(filename):
     """
     image = SimpleImage(filename)
 
-    # TODO: your code here
     for pixel in image:
         # Compute the average intensity of this pixel
         avg = (pixel.red + pixel.green + pixel.blue) // 3
